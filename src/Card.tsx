@@ -1,39 +1,51 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { FaSteam, FaItchIo } from "react-icons/fa";
-import { MdPublic } from "react-icons/md"; // For Global Game Jam
+import { MdPublic } from "react-icons/md"; // Global Game Jam
+import GameModal from './GameModal.tsx';
 import './Card.css';
 
 interface CardProps {
   imageSrc: string;
-  link: string;
-  altText?: string;
+  gameTitle: string;
+  iframeSrc: string; // The HTML file for the popup
   platform?: "steam" | "itch" | "ggj";
   platformMode?: "light" | "dark";
 }
 
-const Card: React.FC<CardProps> = ({ imageSrc, link, altText, platform, platformMode }) => {
+const Card: React.FC<CardProps> = ({ imageSrc, gameTitle, iframeSrc, platform, platformMode }) => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
   const getPlatformIcon = () => {
-    var cn: string = (platformMode == 'light') ? "platform-icon-light" : "platform-icon-dark";
+    const iconClass = platformMode === "light" ? "platform-icon-light" : "platform-icon-dark";
     
     switch (platform) {
-    case "steam":
-        return <FaSteam size={32} className={cn} />;
-    case "itch":
-        return <FaItchIo size={32} className={cn} />;
-    case "ggj":
-        return <MdPublic size={32} className={cn} />;
-    default:
+      case "steam":
+        return <FaSteam size={32} className={iconClass} />;
+      case "itch":
+        return <FaItchIo size={32} className={iconClass} />;
+      case "ggj":
+        return <MdPublic size={32} className={iconClass} />;
+      default:
         return null;
     }
   };
 
   return (
-    <div className="card">
-      <a href={link} target="_blank" rel="noopener noreferrer">
+    <>
+      <div className="card" onClick={() => setIsModalOpen(true)}>
+        {/* Platform Icon in Top Right */}
         {platform && <div className="icon-wrapper">{getPlatformIcon()}</div>}
-        <img src={imageSrc} className="card" alt={altText} />
-      </a>
-    </div>
+        <img src={imageSrc} className="card-image" alt={gameTitle} />
+      </div>
+
+      {/* Modal Popup */}
+      <GameModal
+        isOpen={isModalOpen}
+        onClose={() => setIsModalOpen(false)}
+        gameTitle={gameTitle}
+        gameIframeSrc={iframeSrc}
+      />
+    </>
   );
 };
 
