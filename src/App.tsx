@@ -46,14 +46,16 @@ function App() {
       <Card
         imageSrc={StopTheSlimesPic}
         link="https://store.steampowered.com/app/2659530/Stop_The_Slimes/"
-        altText="Stop The Slimes"
+        gameTitle='Stop The Slimes'
+        iframeSrc=""
         platform="steam"
         platformMode='dark'
       />
       <Card
         imageSrc={FrankensteinsHitmanPic}
         link="https://yourgeekeric.itch.io/frankensteins-hitman"
-        altText="Frankenstein's Hitman"
+        gameTitle="Frankenstein's Hitman"
+        iframeSrc=""
         platform="itch"
         platformMode='light'
       />

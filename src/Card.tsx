@@ -6,13 +6,14 @@ import './Card.css';
 
 interface CardProps {
   imageSrc: string;
+  link: string;
   gameTitle: string;
   iframeSrc: string; // The HTML file for the popup
   platform?: "steam" | "itch" | "ggj";
   platformMode?: "light" | "dark";
 }
 
-const Card: React.FC<CardProps> = ({ imageSrc, gameTitle, iframeSrc, platform, platformMode }) => {
+const Card: React.FC<CardProps> = ({ imageSrc, link, gameTitle, iframeSrc, platform, platformMode }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const getPlatformIcon = () => {
@@ -34,7 +35,9 @@ const Card: React.FC<CardProps> = ({ imageSrc, gameTitle, iframeSrc, platform, p
     <>
       <div className="card" onClick={() => setIsModalOpen(true)}>
         {/* Platform Icon in Top Right */}
+        <a href={link} target="_blank" rel="noopener noreferrer">
         {platform && <div className="icon-wrapper">{getPlatformIcon()}</div>}
+        </a>
         <img src={imageSrc} className="card-image" alt={gameTitle} />
       </div>
 
