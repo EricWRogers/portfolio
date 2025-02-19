@@ -38,7 +38,7 @@ const Card: React.FC<CardProps> = ({ imageSrc, link, gameTitle, iframeSrc, platf
         <a href={link} target="_blank" rel="noopener noreferrer">
         {platform && <div className="icon-wrapper">{getPlatformIcon()}</div>}
         </a>
-        <img src={imageSrc} className="card-image" alt={gameTitle} />
+        <img src={imageSrc} className="card" alt={gameTitle} />
       </div>
 
       {/* Modal Popup */}
