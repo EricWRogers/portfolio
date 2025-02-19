@@ -38,7 +38,7 @@ function App() {
         </a>
       </div>
       <video width="640" height="360" controls autoPlay loop muted className='videoPlayer'>
-        <source src={myVideo} type="video/mp4" className='videoPlayer'/>
+        <source src={myVideo} type="video/mp4"/>
         Your browser does not support the video tag.
       </video>
       <hr/>
