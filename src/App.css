@@ -5,6 +5,21 @@
   text-align: center;
 }
 
+.videoPlayer {
+  border-radius: 25px;
+  width: 90%;
+}
+
+hr {
+  position: 0 -20px;
+  border-radius: 2px;
+  border: none;
+  background-color: rgb(67, 230, 97);
+  height: 4px;
+  width: 100%;
+  margin: 20px auto;
+}
+
 .profile {
   height: 24em;
   padding: 1.5em;
