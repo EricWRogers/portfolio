@@ -17,48 +17,92 @@ function App() {
 
   return (
     <>
-      <h1>Eric W. Rogers</h1>
-      <div>
-      <img src={profilePic} className="profile" alt="yourgeekeric logo" />
-        <br />
-        <a href="https://www.youtube.com/@yourgeekeric" target="_blank">
-          <IoLogoYoutube size={48} className='social'/>
-        </a>
-        <a href='https://x.com/yourgeekeric' target="_blank">
-          <FaSquareXTwitter size={48} className='social'/>
-        </a>
-        <a href='https://github.com/EricWRogers' target="_blank">
-          <FaGithub size={48} className='social'/>
-        </a>
-        <a href='https://store.steampowered.com/search/?developer=SuperPupStudio' target="_blank">
-          <FaSteam size={48} className='social'/>
-        </a>
-        <a href='https://www.linkedin.com/in/eric-rogers-b12874163/'>
-          <FaLinkedin size={48} className='social'/>
-        </a>
+      <div className='nav-wrapper'>
+        <div className='nav-social'>
+          <a href="https://www.youtube.com/@yourgeekeric" target="_blank">
+            <IoLogoYoutube size={48} className='social' />
+          </a>
+          <a href='https://x.com/yourgeekeric' target="_blank">
+            <FaSquareXTwitter size={48} className='social' />
+          </a>
+          <a href='https://github.com/EricWRogers' target="_blank">
+            <FaGithub size={48} className='social' />
+          </a>
+          <a href='https://store.steampowered.com/search/?developer=SuperPupStudio' target="_blank">
+            <FaSteam size={48} className='social' />
+          </a>
+          <a href='https://www.linkedin.com/in/eric-rogers-b12874163/'>
+            <FaLinkedin size={48} className='social' />
+          </a>
+        </div>
       </div>
-      <video width="640" height="360" controls autoPlay loop muted className='videoPlayer'>
-        <source src={myVideo} type="video/mp4"/>
-        Your browser does not support the video tag.
-      </video>
-      <hr/>
+      <div className='intro-wrapper'>
+        <div className='profile-wrapper'>
+          <img src={profilePic} className="profile" alt="yourgeekeric logo" />
+          <br/>
+          <h1>Eric W. Rogers</h1>
+        </div>
+        <video width="640" height="360" controls autoPlay loop muted className='videoPlayer'>
+          <source src={myVideo} type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <hr />
+      <h2>Current Projects</h2>
+      <div className='card-flex'>
+        <Card
+          imageSrc={StopTheSlimesPic}
+          link="https://store.steampowered.com/app/2659530/Stop_The_Slimes/"
+          gameTitle='Stop The Slimes'
+          iframeSrc=""
+          platform="steam"
+          platformMode='dark'
+        />
+      </div>
+      <hr />
       <h2>Projects</h2>
-      <Card
-        imageSrc={StopTheSlimesPic}
-        link="https://store.steampowered.com/app/2659530/Stop_The_Slimes/"
-        gameTitle='Stop The Slimes'
-        iframeSrc=""
-        platform="steam"
-        platformMode='dark'
-      />
-      <Card
-        imageSrc={FrankensteinsHitmanPic}
-        link="https://yourgeekeric.itch.io/frankensteins-hitman"
-        gameTitle="Frankenstein's Hitman"
-        iframeSrc=""
-        platform="itch"
-        platformMode='light'
-      />
+      <div className='card-grid'>
+        <Card
+          imageSrc={FrankensteinsHitmanPic}
+          link="https://yourgeekeric.itch.io/frankensteins-hitman"
+          gameTitle="Frankenstein's Hitman"
+          iframeSrc=""
+          platform="itch"
+          platformMode='light'
+        />
+        <Card
+          imageSrc="/Portfolio/project-drill-dash.png"
+          link="https://store.steampowered.com/app/1064110/Drill_Dash/"
+          gameTitle="Drill Dash"
+          iframeSrc=""
+          platform="steam"
+          platformMode='dark'
+        />
+        <Card
+          imageSrc="public/Portfolio/project-gob.png"
+          link="#"
+          gameTitle="Gob Smax Galaxy"
+          iframeSrc=""
+          platform="mobile"
+          platformMode='light'
+        />
+        <Card
+          imageSrc="public/Portfolio/project-otrio.png"
+          link="#"
+          gameTitle="Otrio"
+          iframeSrc=""
+          platform="mobile"
+          platformMode='dark'
+        />
+        <Card
+          imageSrc="public/Portfolio/project-flood-runner.png"
+          link="#"
+          gameTitle="Flood Runner"
+          iframeSrc=""
+          platform="itch"
+          platformMode='light'
+        />
+      </div>
       <p className="read-the-docs">
         YourGeekEric, Copyright © 2025
       </p>
