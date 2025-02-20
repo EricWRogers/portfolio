@@ -135,4 +135,8 @@ hr {
     height: 90%;
     width: 90%;
   }
+
+  .profile {
+    height: 9em;
+  }
 }

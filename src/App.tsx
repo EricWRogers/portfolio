@@ -80,7 +80,7 @@ function App() {
         />
         <Card
           imageSrc="public/Portfolio/project-gob.png"
-          link="#"
+          link="https://store.steampowered.com/app/1064110/Drill_Dash/"
           gameTitle="Gob Smax Galaxy"
           iframeSrc=""
           platform="mobile"
@@ -88,7 +88,7 @@ function App() {
         />
         <Card
           imageSrc="public/Portfolio/project-otrio.png"
-          link="#"
+          link="https://store.steampowered.com/app/1064110/Drill_Dash/"
           gameTitle="Otrio"
           iframeSrc=""
           platform="mobile"
@@ -96,7 +96,7 @@ function App() {
         />
         <Card
           imageSrc="public/Portfolio/project-flood-runner.png"
-          link="#"
+          link="https://store.steampowered.com/app/1064110/Drill_Dash/"
           gameTitle="Flood Runner"
           iframeSrc=""
           platform="itch"
