@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { FaSteam, FaItchIo, FaAppStoreIos } from "react-icons/fa";
+import { FaSteam, FaItchIo, FaAppStoreIos, FaGithub } from "react-icons/fa";
 import { IoLogoAndroid } from "react-icons/io";
 import { MdPublic } from "react-icons/md"; // Global Game Jam
 import GameModal from './GameModal.tsx';
@@ -10,7 +10,7 @@ interface CardProps {
   link: string;
   gameTitle: string;
   iframeSrc: string; // The HTML file for the popup
-  platform?: "steam" | "itch" | "ggj" | "mobile";
+  platform?: "steam" | "itch" | "ggj" | "mobile" | "github";
   platformMode?: "light" | "dark";
 }
 
@@ -29,6 +29,8 @@ const Card: React.FC<CardProps> = ({ imageSrc, link, gameTitle, iframeSrc, platf
         return <MdPublic size={48} className={iconClass} />;
       case "mobile":
         return <><FaAppStoreIos size={48} className={iconClass} /><IoLogoAndroid size={48} className={iconClass} /></>
+      case "github":
+        return <FaGithub size={48} className={iconClass} />;
       default:
         return null;
     }

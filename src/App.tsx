@@ -49,7 +49,8 @@ function App() {
       </div>
       <hr />
       <h2>Current Projects</h2>
-      <div className='card-flex'>
+      <div className='card-wrapper'>
+      <div className='card-grid'>
         <Card
           imageSrc={StopTheSlimesPic}
           link="https://store.steampowered.com/app/2659530/Stop_The_Slimes/"
@@ -58,9 +59,19 @@ function App() {
           platform="steam"
           platformMode='dark'
         />
+        <Card
+          imageSrc="/Portfolio/project-canis-engine.png"
+          link="https://github.com/EricWRogers/canis"
+          gameTitle='Stop The Slimes'
+          iframeSrc=""
+          platform="github"
+          platformMode='light'
+        />
+      </div>
       </div>
       <hr />
       <h2>Projects</h2>
+      <div className='card-wrapper'>
       <div className='card-grid'>
         <Card
           imageSrc={FrankensteinsHitmanPic}
@@ -102,6 +113,7 @@ function App() {
           platform="itch"
           platformMode='light'
         />
+      </div>
       </div>
       <p className="read-the-docs">
         YourGeekEric, Copyright © 2025
