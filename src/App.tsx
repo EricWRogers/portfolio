@@ -79,24 +79,24 @@ function App() {
           platformMode='dark'
         />
         <Card
-          imageSrc="public/Portfolio/project-gob.png"
-          link="https://store.steampowered.com/app/1064110/Drill_Dash/"
+          imageSrc="Portfolio/project-gob.png"
+          link="#"
           gameTitle="Gob Smax Galaxy"
           iframeSrc=""
           platform="mobile"
           platformMode='light'
         />
         <Card
-          imageSrc="public/Portfolio/project-otrio.png"
-          link="https://store.steampowered.com/app/1064110/Drill_Dash/"
+          imageSrc="Portfolio/project-otrio.png"
+          link="#"
           gameTitle="Otrio"
           iframeSrc=""
           platform="mobile"
           platformMode='dark'
         />
         <Card
-          imageSrc="public/Portfolio/project-flood-runner.png"
-          link="https://store.steampowered.com/app/1064110/Drill_Dash/"
+          imageSrc="Portfolio/project-flood-runner.png"
+          link="#"
           gameTitle="Flood Runner"
           iframeSrc=""
           platform="itch"
