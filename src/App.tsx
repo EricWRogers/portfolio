@@ -39,8 +39,8 @@ function App() {
       <div className='intro-wrapper'>
         <div className='profile-wrapper'>
           <img src={profilePic} className="profile" alt="yourgeekeric logo" />
-          <br/>
-          <h1>Eric W. Rogers</h1>
+          <h1 style={{ margin: '0', padding: '0' }}>Eric W. Rogers</h1>
+          <h2 style={{ padding: '0' }}>Software Developer</h2>
         </div>
         <video width="640" height="360" controls autoPlay loop muted className='videoPlayer'>
           <source src={myVideo} type="video/mp4" />

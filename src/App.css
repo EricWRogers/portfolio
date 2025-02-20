@@ -5,6 +5,10 @@
   text-align: center;
 }
 
+.trialer {
+  justify-content: center;
+}
+
 .videoPlayer {
   border-radius: 25px;
   height: 50%;
@@ -19,13 +23,11 @@
 
 .nav-social {
   display: inline-block;
-  
 }
 
 .intro-wrapper {
   display: flex;
   justify-content: space-between;
-  
 }
 
 .profile-wrapper {
@@ -97,4 +99,40 @@ hr {
 
 .read-the-docs {
   color: #888;
+}
+
+@media (max-width: 768px) {
+  #root {
+    max-width: 768;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+  }
+
+  .nav-wrapper {
+    padding: 20px;
+    justify-content: center;
+  }
+  
+  .nav-social {
+    display: inline-block;
+  }
+  
+  .intro-wrapper {
+    display: inline-block;
+    justify-content: space-between;
+  }
+  
+  .profile-wrapper {
+    display: inline-block;;
+  }
+
+  .card-grid {
+    max-width: 768px;
+  }
+
+  .videoPlayer {
+    height: 90%;
+    width: 90%;
+  }
 }
