@@ -48,7 +48,7 @@ const Card: React.FC<CardProps> = ({ imageSrc, link, gameTitle, iframeSrc, platf
         )}
 
         {/* Clickable Image */}
-        <img src={imageSrc} className="card-image" alt={gameTitle} />
+        <img src={imageSrc} className="card" alt={gameTitle} />
       </div>
 
       {/* Modal Popup */}

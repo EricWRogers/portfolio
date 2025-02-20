@@ -40,7 +40,7 @@
 
 .card-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(24em, 1fr)); /* Responsive columns */
+  grid-template-columns: repeat(auto-fit, minmax(18em, 1fr)); /* Responsive columns */
   gap: 20px;
   justify-content: space-between;
   align-items: center;
@@ -97,7 +97,7 @@ hr {
   color: #888;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 996px) {
   #root {
     max-width: 768;
     margin: 0 auto;
@@ -125,6 +125,7 @@ hr {
 
   .card-grid {
     max-width: 768px;
+    grid-template-columns: repeat(auto-fit, minmax(24em, 1fr));
   }
 
   .videoPlayer {

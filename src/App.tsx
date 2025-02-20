@@ -62,7 +62,15 @@ function App() {
         <Card
           imageSrc="/Portfolio/project-canis-engine.png"
           link="https://github.com/EricWRogers/canis"
-          gameTitle='Stop The Slimes'
+          gameTitle='Canis Engine'
+          iframeSrc=""
+          platform="github"
+          platformMode='light'
+        />
+        <Card
+          imageSrc="/Portfolio/project-super-pup-utilities.png"
+          link="https://github.com/EricWRogers/SPSUnityUtilities"
+          gameTitle='SuperPupStudio Unity Utilities'
           iframeSrc=""
           platform="github"
           platformMode='light'

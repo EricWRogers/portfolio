@@ -1,7 +1,7 @@
 .card {
     position: relative;
     width: 100%;
-    max-width: 24em;
+    max-width: 18em;
     padding: 0.5em;
     display: flex;
     align-items: center;
@@ -9,7 +9,7 @@
     cursor: pointer;
 }
 
-img.card-image {
+img.card {
     width: 100%;
     border-radius: 25px;
     transition:
@@ -17,8 +17,8 @@ img.card-image {
         opacity 250ms linear;
 }
 
-img.card-image:hover,
-img.card-image:focus {
+img.card:hover,
+img.card:focus {
     transform: scale(1.1);
     opacity: .75;
     cursor: pointer;
@@ -42,4 +42,10 @@ img.card-image:focus {
 
 .platform-icon-dark {
     color: rgb(23, 37, 37);
+}
+
+@media (max-width: 996px) {
+    .card {
+        max-width: 24em;
+    }
 }
