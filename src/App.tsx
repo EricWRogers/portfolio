@@ -52,7 +52,7 @@ function App() {
       <div className='card-wrapper'>
       <div className='card-grid'>
         <Card
-          imageSrc={StopTheSlimesPic}
+          imageSrc="/Portfolio/project-stop-the-slimes.png"
           link="https://store.steampowered.com/app/2659530/Stop_The_Slimes/"
           gameTitle='Stop The Slimes'
           iframeSrc=""
@@ -82,7 +82,7 @@ function App() {
       <div className='card-wrapper'>
       <div className='card-grid'>
         <Card
-          imageSrc={FrankensteinsHitmanPic}
+          imageSrc="/Portfolio/project-frankenstein-hitman.png"
           link="https://yourgeekeric.itch.io/frankensteins-hitman"
           gameTitle="Frankenstein's Hitman"
           iframeSrc=""
@@ -106,6 +106,14 @@ function App() {
           platformMode='light'
         />
         <Card
+          imageSrc="Portfolio/project-garden-of-doom.png"
+          link="#"
+          gameTitle="Garden of Doom"
+          iframeSrc=""
+          platform="itch"
+          platformMode='light'
+        />
+        <Card
           imageSrc="Portfolio/project-otrio.png"
           link="#"
           gameTitle="Otrio"
@@ -117,6 +125,14 @@ function App() {
           imageSrc="Portfolio/project-flood-runner.png"
           link="#"
           gameTitle="Flood Runner"
+          iframeSrc=""
+          platform="itch"
+          platformMode='light'
+        />
+        <Card
+          imageSrc="Portfolio/project-lw.png"
+          link="#"
+          gameTitle="Lightning Wizard"
           iframeSrc=""
           platform="itch"
           platformMode='light'
