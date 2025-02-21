@@ -79,10 +79,26 @@ function App() {
       <h2>Projects</h2>
       <div className='card-wrapper'>
       <div className='card-grid'>
+      <Card
+          imageSrc="/Portfolio/project-bath-battle.jpg"
+          link="https://globalgamejam.org/games/2025/bath-battle-3"
+          gameTitle="Bath Battle"
+          iframeSrc=""
+          platform="itch"
+          platformMode='light'
+        />
         <Card
           imageSrc="/Portfolio/project-frankenstein-hitman.png"
           link="https://yourgeekeric.itch.io/frankensteins-hitman"
           gameTitle="Frankenstein's Hitman"
+          iframeSrc=""
+          platform="itch"
+          platformMode='light'
+        />
+        <Card
+          imageSrc="/Portfolio/project-crown-of-screws.jpg"
+          link="https://yourgeekeric.itch.io/crown-of-screws"
+          gameTitle="Crown of Screws"
           iframeSrc=""
           platform="itch"
           platformMode='light'
