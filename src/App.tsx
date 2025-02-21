@@ -1,6 +1,4 @@
 import profilePic from '/yourgeekeric.png'
-import StopTheSlimesPic from '/StopTheSlime.png'
-import FrankensteinsHitmanPic from '/FrankensteinsHitman.png'
 import { IoLogoYoutube } from "react-icons/io";
 import { FaSquareXTwitter } from "react-icons/fa6";
 import { FaGithub } from "react-icons/fa";
