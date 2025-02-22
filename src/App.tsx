@@ -53,7 +53,7 @@ function App() {
           imageSrc="/Portfolio/project-stop-the-slimes.png"
           link="https://store.steampowered.com/app/2659530/Stop_The_Slimes/"
           gameTitle='Stop The Slimes'
-          iframeSrc=""
+          iframeSrc="/ddslider.html"
           platform="steam"
           platformMode='dark'
         />
@@ -107,7 +107,7 @@ function App() {
           imageSrc="/Portfolio/project-drill-dash.png"
           link="https://store.steampowered.com/app/1064110/Drill_Dash/"
           gameTitle="Drill Dash"
-          iframeSrc=""
+          iframeSrc="/drill-dash.html"
           platform="steam"
           platformMode='dark'
         />
@@ -115,7 +115,7 @@ function App() {
           imageSrc="Portfolio/project-gob.png"
           link="#"
           gameTitle="Gob Smax Galaxy"
-          iframeSrc=""
+          iframeSrc="/gob-smax-galaxy.html"
           platform="mobile"
           platformMode='light'
         />
@@ -131,7 +131,7 @@ function App() {
           imageSrc="Portfolio/project-otrio.png"
           link="#"
           gameTitle="Otrio"
-          iframeSrc=""
+          iframeSrc="/otrio.html"
           platform="mobile"
           platformMode='dark'
         />
@@ -139,7 +139,7 @@ function App() {
           imageSrc="Portfolio/project-flood-runner.png"
           link="#"
           gameTitle="Flood Runner"
-          iframeSrc=""
+          iframeSrc="/flood-runner.html"
           platform="itch"
           platformMode='light'
         />
@@ -147,7 +147,7 @@ function App() {
           imageSrc="Portfolio/project-lw.png"
           link="#"
           gameTitle="Lightning Wizard"
-          iframeSrc=""
+          iframeSrc="/lightning-wizard.html"
           platform="itch"
           platformMode='light'
         />
