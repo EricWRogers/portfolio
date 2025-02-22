@@ -60,8 +60,8 @@ function App() {
         <Card
           imageSrc="/Portfolio/project-canis-engine.png"
           link="https://github.com/EricWRogers/canis"
-          gameTitle='Canis Engine'
-          iframeSrc=""
+          gameTitle='Canis Game Engine'
+          iframeSrc="/canis-game-engine.html"
           platform="github"
           platformMode='light'
         />
@@ -69,7 +69,7 @@ function App() {
           imageSrc="/Portfolio/project-super-pup-utilities.png"
           link="https://github.com/EricWRogers/SPSUnityUtilities"
           gameTitle='SuperPupStudio Unity Utilities'
-          iframeSrc=""
+          iframeSrc="/super-pup-studio-unity-utilities.html"
           platform="github"
           platformMode='light'
         />
