@@ -15,9 +15,9 @@ const GameModal: React.FC<GameModalProps> = ({ isOpen, onClose, gameTitle, gameI
 
   const handleLoad = () => {
     const iframe = iframeRef.current;
-    if (iframe) {
+    if (iframe && iframe.contentDocument && iframe.contentDocument.body) {
       const scrollHeight = iframe.contentDocument.body.scrollHeight;
-      const viewportWidth = window.innerWidth; // equivalent to 100vw in pixels
+      const viewportWidth = window.innerWidth; // 100vw in pixels
       if (scrollHeight > viewportWidth) {
         iframe.style.height = '100vw';
       } else {
