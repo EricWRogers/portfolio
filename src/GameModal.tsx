@@ -11,7 +11,7 @@ interface GameModalProps {
 const GameModal: React.FC<GameModalProps> = ({ isOpen, onClose, gameTitle, gameIframeSrc }) => {
   if (!isOpen) return null;
 
-  const iframeRef = useRef(null);
+  const iframeRef = useRef<HTMLIFrameElement>(null);
 
   const handleLoad = () => {
     const iframe = iframeRef.current;
