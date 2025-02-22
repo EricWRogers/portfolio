@@ -53,7 +53,7 @@ function App() {
           imageSrc="/Portfolio/project-stop-the-slimes.png"
           link="https://store.steampowered.com/app/2659530/Stop_The_Slimes/"
           gameTitle='Stop The Slimes'
-          iframeSrc="/ddslider.html"
+          iframeSrc="/stop-the-slimes.html"
           platform="steam"
           platformMode='dark'
         />
