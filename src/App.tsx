@@ -89,7 +89,7 @@ function App() {
           />
           <Card
             imageSrc="Portfolio/project-gob.png"
-            link=""
+            link="#"
             gameTitle="Gob Smax Galaxy"
             iframeSrc="/gob-smax-galaxy.html"
             platform="mobile"
@@ -115,7 +115,7 @@ function App() {
             imageSrc="/Portfolio/project-frankenstein-hitman.png"
             link="https://yourgeekeric.itch.io/frankensteins-hitman"
             gameTitle="Frankenstein's Hitman"
-            iframeSrc=""
+            iframeSrc="/frankenstein-hitman.html"
             platform="itch"
             platformMode='light'
           />
@@ -123,7 +123,7 @@ function App() {
             imageSrc="/Portfolio/project-crown-of-screws.jpg"
             link="https://yourgeekeric.itch.io/crown-of-screws"
             gameTitle="Crown of Screws"
-            iframeSrc=""
+            iframeSrc="/crown-of-screws.html"
             platform="itch"
             platformMode='light'
           />
