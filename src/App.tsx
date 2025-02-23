@@ -48,110 +48,112 @@ function App() {
       <hr />
       <h2>Current Projects</h2>
       <div className='card-wrapper'>
-      <div className='card-grid'>
-        <Card
-          imageSrc="/Portfolio/project-stop-the-slimes.png"
-          link="https://store.steampowered.com/app/2659530/Stop_The_Slimes/"
-          gameTitle='Stop The Slimes'
-          iframeSrc="/stop-the-slimes.html"
-          platform="steam"
-          platformMode='dark'
-        />
-        <Card
-          imageSrc="/Portfolio/project-canis-engine.png"
-          link="https://github.com/EricWRogers/canis"
-          gameTitle='Canis Game Engine'
-          iframeSrc="/canis-game-engine.html"
-          platform="github"
-          platformMode='light'
-        />
-        <Card
-          imageSrc="/Portfolio/project-super-pup-utilities.png"
-          link="https://github.com/EricWRogers/SPSUnityUtilities"
-          gameTitle='SuperPupStudio Unity Utilities'
-          iframeSrc="/super-pup-studio-unity-utilities.html"
-          platform="github"
-          platformMode='light'
-        />
-      </div>
+        <div className='card-grid'>
+          <Card
+            imageSrc="/Portfolio/project-stop-the-slimes.png"
+            link="https://store.steampowered.com/app/2659530/Stop_The_Slimes/"
+            gameTitle='Stop The Slimes'
+            iframeSrc="/stop-the-slimes.html"
+            platform="steam"
+            platformMode='dark'
+          />
+          <Card
+            imageSrc="/Portfolio/project-canis-engine.png"
+            link="https://github.com/EricWRogers/canis"
+            gameTitle='Canis Game Engine'
+            iframeSrc="/canis-game-engine.html"
+            platform="github"
+            platformMode='light'
+          />
+          <Card
+            imageSrc="/Portfolio/project-super-pup-utilities.png"
+            link="https://github.com/EricWRogers/SPSUnityUtilities"
+            gameTitle='SuperPupStudio Unity Utilities'
+            iframeSrc="/super-pup-studio-unity-utilities.html"
+            platform="github"
+            platformMode='light'
+          />
+        </div>
       </div>
       <hr />
       <h2>Projects</h2>
       <div className='card-wrapper'>
-      <div className='card-grid'>
-      <Card
-          imageSrc="/Portfolio/project-bath-battle.jpg"
-          link="https://globalgamejam.org/games/2025/bath-battle-3"
-          gameTitle="Bath Battle"
-          iframeSrc=""
-          platform="itch"
-          platformMode='light'
-        />
-        <Card
-          imageSrc="/Portfolio/project-frankenstein-hitman.png"
-          link="https://yourgeekeric.itch.io/frankensteins-hitman"
-          gameTitle="Frankenstein's Hitman"
-          iframeSrc=""
-          platform="itch"
-          platformMode='light'
-        />
-        <Card
-          imageSrc="/Portfolio/project-crown-of-screws.jpg"
-          link="https://yourgeekeric.itch.io/crown-of-screws"
-          gameTitle="Crown of Screws"
-          iframeSrc=""
-          platform="itch"
-          platformMode='light'
-        />
-        <Card
-          imageSrc="/Portfolio/project-drill-dash.png"
-          link="https://store.steampowered.com/app/1064110/Drill_Dash/"
-          gameTitle="Drill Dash"
-          iframeSrc="/drill-dash.html"
-          platform="steam"
-          platformMode='dark'
-        />
-        <Card
-          imageSrc="Portfolio/project-gob.png"
-          link="#"
-          gameTitle="Gob Smax Galaxy"
-          iframeSrc="/gob-smax-galaxy.html"
-          platform="mobile"
-          platformMode='light'
-        />
-        <Card
-          imageSrc="Portfolio/project-garden-of-doom.png"
-          link="#"
-          gameTitle="Garden of Doom"
-          iframeSrc=""
-          platform="itch"
-          platformMode='light'
-        />
-        <Card
-          imageSrc="Portfolio/project-otrio.png"
-          link="#"
-          gameTitle="Otrio"
-          iframeSrc="/otrio.html"
-          platform="mobile"
-          platformMode='dark'
-        />
-        <Card
-          imageSrc="Portfolio/project-flood-runner.png"
-          link="#"
-          gameTitle="Flood Runner"
-          iframeSrc="/flood-runner.html"
-          platform="itch"
-          platformMode='light'
-        />
-        <Card
-          imageSrc="Portfolio/project-lw.png"
-          link="#"
-          gameTitle="Lightning Wizard"
-          iframeSrc="/lightning-wizard.html"
-          platform="itch"
-          platformMode='light'
-        />
-      </div>
+        <div className='card-grid'>
+          <Card
+            imageSrc="/Portfolio/project-drill-dash.png"
+            link="https://store.steampowered.com/app/1064110/Drill_Dash/"
+            gameTitle="Drill Dash"
+            iframeSrc="/drill-dash.html"
+            platform="steam"
+            platformMode='dark'
+          />
+          <Card
+            imageSrc="Portfolio/project-gob.png"
+            link="#"
+            gameTitle="Gob Smax Galaxy"
+            iframeSrc="/gob-smax-galaxy.html"
+            platform="mobile"
+            platformMode='light'
+          />
+          <Card
+            imageSrc="Portfolio/project-otrio.png"
+            link="#"
+            gameTitle="Otrio"
+            iframeSrc="/otrio.html"
+            platform="mobile"
+            platformMode='dark'
+          />
+          <Card
+            imageSrc="/Portfolio/project-bath-battle.jpg"
+            link="https://globalgamejam.org/games/2025/bath-battle-3"
+            gameTitle="Bath Battle"
+            iframeSrc=""
+            platform="itch"
+            platformMode='light'
+          />
+          <Card
+            imageSrc="/Portfolio/project-frankenstein-hitman.png"
+            link="https://yourgeekeric.itch.io/frankensteins-hitman"
+            gameTitle="Frankenstein's Hitman"
+            iframeSrc=""
+            platform="itch"
+            platformMode='light'
+          />
+          <Card
+            imageSrc="/Portfolio/project-crown-of-screws.jpg"
+            link="https://yourgeekeric.itch.io/crown-of-screws"
+            gameTitle="Crown of Screws"
+            iframeSrc=""
+            platform="itch"
+            platformMode='light'
+          />
+
+          <Card
+            imageSrc="Portfolio/project-garden-of-doom.png"
+            link="#"
+            gameTitle="Garden of Doom"
+            iframeSrc=""
+            platform="itch"
+            platformMode='light'
+          />
+          
+          <Card
+            imageSrc="Portfolio/project-flood-runner.png"
+            link="#"
+            gameTitle="Flood Runner"
+            iframeSrc="/flood-runner.html"
+            platform="itch"
+            platformMode='light'
+          />
+          <Card
+            imageSrc="Portfolio/project-lw.png"
+            link="#"
+            gameTitle="Lightning Wizard"
+            iframeSrc="/lightning-wizard.html"
+            platform="itch"
+            platformMode='light'
+          />
+        </div>
       </div>
       <p className="read-the-docs">
         YourGeekEric, Copyright © 2025
