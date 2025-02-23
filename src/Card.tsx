@@ -36,6 +36,8 @@ const Card: React.FC<CardProps> = ({ imageSrc, link, gameTitle, iframeSrc, platf
     }
   };
 
+  if (link != "#")
+  {
   return (
     <>
       <div className="card" onClick={() => setIsModalOpen(true)}>
@@ -60,6 +62,32 @@ const Card: React.FC<CardProps> = ({ imageSrc, link, gameTitle, iframeSrc, platf
       />
     </>
   );
+  } else {
+    return (
+      <>
+        <div className="card" onClick={() => setIsModalOpen(true)}>
+          
+          {/* Platform Icon - Ensuring it's inside the card */}
+          {platform && (
+            <div className="icon-wrapper">
+            {getPlatformIcon()}
+            </div>
+          )}
+  
+          {/* Clickable Image */}
+          <img src={imageSrc} className="card" alt={gameTitle} />
+        </div>
+  
+        {/* Modal Popup */}
+        <GameModal
+          isOpen={isModalOpen}
+          onClose={() => setIsModalOpen(false)}
+          gameTitle={gameTitle}
+          gameIframeSrc={iframeSrc}
+        />
+      </>
+    );
+  }
 };
 
 export default Card;

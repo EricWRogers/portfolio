@@ -89,7 +89,7 @@ function App() {
           />
           <Card
             imageSrc="Portfolio/project-gob.png"
-            link="#"
+            link=""
             gameTitle="Gob Smax Galaxy"
             iframeSrc="/gob-smax-galaxy.html"
             platform="mobile"
