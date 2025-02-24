@@ -8,11 +8,12 @@
 </head>
 <p>&emsp;Canis is a game engine I have been working on for the last 5 years.
      It is writen in C++ and uses OpenGL for rendering.
-      The Engine is built around a data oriented model ECS, but also one class per entity using ScriptableEntities.</p>
+      The Engine is built around a data oriented model, but also supports having one class per entity.</p>
 <ul>
+    <li>Created systems for input, sprite rendering, 3d rendering, asset management, and application lifecycle.</li>
     <li>2D WebGl support with emscripten.</li>
     <li>Libraries used SDL2, GLEW(OpenGL), GLM, and STB</li>
-    <li>It has been used to creat StopTheSlimes, Shark Bonk, Space Miner, and Dual Defenders</li>
+    <li>It has been used to creat StopTheSlimes, Shark Bonk, Garden of Doom, Space Miner, and Dual Defenders</li>
 </ul>
 <div class="slider">
     <div class="slides">
@@ -20,12 +21,16 @@
         <input type="radio" name="radio-btn" id="radio2">
         <input type="radio" name="radio-btn" id="radio3">
         <input type="radio" name="radio-btn" id="radio4">
+        <input type="radio" name="radio-btn" id="radio5">
 
         <div class="slide first">
             <img src="Games/StopTheSlimes/sts-forest.png" alt="">
         </div>
         <div class="slide">
             <img src="Games/CanisGameEngine/shark-bonk.png" alt="">
+        </div>
+        <div class="slide">
+            <img src="Games/GardenOfDoom/garden-of-doom-03.png" alt="">
         </div>
         <div class="slide">
             <img src="Games/CanisGameEngine/space-miner.png" alt="">
@@ -39,6 +44,7 @@
             <div class="auto-btn2"></div>
             <div class="auto-btn3"></div>
             <div class="auto-btn4"></div>
+            <div class="auto-btn5"></div>
         </div>
     </div>
     <div class="navigation">
@@ -46,6 +52,7 @@
         <label for="radio2" class="navBtn"></label>
         <label for="radio3" class="navBtn"></label>
         <label for="radio4" class="navBtn"></label>
+        <label for="radio5" class="navBtn"></label>
     </div>
 </div>
 <div class="empty-block">

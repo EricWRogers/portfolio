@@ -104,10 +104,10 @@ function App() {
             platformMode='dark'
           />
           <Card
-            imageSrc="/Portfolio/project-bath-battle.jpg"
-            link="https://globalgamejam.org/games/2025/bath-battle-3"
-            gameTitle="Bath Battle"
-            iframeSrc=""
+            imageSrc="Portfolio/project-garden-of-doom.png"
+            link="https://v3.globalgamejam.org/2023/games/garden-doom-8"
+            gameTitle="Garden of Doom"
+            iframeSrc="/garden-of-doom.html"
             platform="itch"
             platformMode='light'
           />
@@ -127,16 +127,23 @@ function App() {
             platform="itch"
             platformMode='light'
           />
+        </div>
+      </div>
+      <p className="read-the-docs">
+        YourGeekEric, Copyright © 2025
+      </p>
+    </>
+  )
+}
 
-          <Card
-            imageSrc="Portfolio/project-garden-of-doom.png"
-            link="#"
-            gameTitle="Garden of Doom"
+/* <Card
+            imageSrc="/Portfolio/project-bath-battle.jpg"
+            link="https://globalgamejam.org/games/2025/bath-battle-3"
+            gameTitle="Bath Battle"
             iframeSrc=""
             platform="itch"
             platformMode='light'
           />
-          
           <Card
             imageSrc="Portfolio/project-flood-runner.png"
             link="#"
@@ -152,14 +159,6 @@ function App() {
             iframeSrc="/lightning-wizard.html"
             platform="itch"
             platformMode='light'
-          />
-        </div>
-      </div>
-      <p className="read-the-docs">
-        YourGeekEric, Copyright © 2025
-      </p>
-    </>
-  )
-}
+          /> */
 
 export default App
