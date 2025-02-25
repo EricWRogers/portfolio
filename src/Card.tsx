@@ -42,18 +42,15 @@ const Card: React.FC<CardProps> = ({ imageSrc, link, gameTitle, iframeSrc, platf
     <>
       <div className="card" onClick={() => setIsModalOpen(true)}>
         
-        {/* Platform Icon - Ensuring it's inside the card */}
         {platform && (
           <a href={link} target="_blank" rel="noopener noreferrer" className="icon-wrapper">
             {getPlatformIcon()}
           </a>
         )}
 
-        {/* Clickable Image */}
         <img src={imageSrc} className="card" alt={gameTitle} />
       </div>
 
-      {/* Modal Popup */}
       <GameModal
         isOpen={isModalOpen}
         onClose={() => setIsModalOpen(false)}

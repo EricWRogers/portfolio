@@ -108,7 +108,13 @@ function App() {
             link="https://v3.globalgamejam.org/2023/games/garden-doom-8"
             gameTitle="Garden of Doom"
             iframeSrc="/garden-of-doom.html"
-            platform="itch"
+            platformMode='light'
+          />
+          <Card
+            imageSrc="Portfolio/project-flood-runner.png"
+            link="#"
+            gameTitle="Flood Runner"
+            iframeSrc="/flood-runner.html"
             platformMode='light'
           />
           <Card
