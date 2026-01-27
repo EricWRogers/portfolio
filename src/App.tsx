@@ -6,7 +6,6 @@ import { FaSteam } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import Card from './Card.tsx';
 import myVideo from '/FHTrialer.mp4';
-import { useEffect } from 'react';
 
 
 
