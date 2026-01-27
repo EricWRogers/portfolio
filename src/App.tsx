@@ -6,12 +6,63 @@ import { FaSteam } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import Card from './Card.tsx';
 import myVideo from '/FHTrialer.mp4';
+import { useEffect } from 'react';
 
 
 
 import './App.css'
 
 function App() {
+  useEffect(() => {
+    const htmlPrefetch = [
+      '/project-rusty-security.html',
+      '/stop-the-slimes.html',
+      '/canis-game-engine.html',
+      '/super-pup-studio-unity-utilities.html',
+      '/drill-dash.html',
+      '/gob-smax-galaxy.html',
+      '/otrio.html',
+      '/garden-of-doom.html',
+      '/flood-runner.html',
+      '/frankenstein-hitman.html',
+      '/crown-of-screws.html',
+    ];
+
+    const imagePrefetch = [
+      '/Portfolio/project-rusty-security.png',
+      '/Portfolio/project-stop-the-slimes.png',
+      '/Portfolio/project-canis-engine.png',
+      '/Portfolio/project-super-pup-utilities.png',
+      '/Portfolio/project-drill-dash.png',
+      'Portfolio/project-gob.png',
+      'Portfolio/project-otrio.png',
+      'Portfolio/project-garden-of-doom.png',
+      'Portfolio/project-flood-runner.png',
+      '/Portfolio/project-frankenstein-hitman.png',
+      '/Portfolio/project-crown-of-screws.jpg',
+    ];
+
+    const runPrefetch = () => {
+      htmlPrefetch.forEach((href) => {
+        const link = document.createElement('link');
+        link.rel = 'prefetch';
+        link.as = 'document';
+        link.href = href;
+        document.head.appendChild(link);
+      });
+
+      imagePrefetch.forEach((src) => {
+        const img = new Image();
+        img.src = src;
+      });
+    };
+
+    if ('requestIdleCallback' in window) {
+      (window as Window & { requestIdleCallback: (cb: () => void) => void }).requestIdleCallback(runPrefetch);
+    } else {
+      setTimeout(runPrefetch, 200);
+    }
+  }, []);
 
   return (
     <>
