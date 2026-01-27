@@ -13,38 +13,6 @@ import { useEffect } from 'react';
 import './App.css'
 
 function App() {
-  useEffect(() => {
-    const htmlPrefetch = [
-      '/project-rusty-security.html',
-      '/stop-the-slimes.html',
-      '/canis-game-engine.html',
-      '/super-pup-studio-unity-utilities.html',
-      '/drill-dash.html',
-      '/gob-smax-galaxy.html',
-      '/otrio.html',
-      '/garden-of-doom.html',
-      '/flood-runner.html',
-      '/frankenstein-hitman.html',
-      '/crown-of-screws.html',
-    ];
-
-    const runPrefetch = () => {
-      htmlPrefetch.forEach((href) => {
-        const link = document.createElement('link');
-        link.rel = 'prefetch';
-        link.as = 'document';
-        link.href = href;
-        document.head.appendChild(link);
-      });
-    };
-
-    if ('requestIdleCallback' in window) {
-      (window as Window & { requestIdleCallback: (cb: () => void) => void }).requestIdleCallback(runPrefetch);
-    } else {
-      setTimeout(runPrefetch, 200);
-    }
-  }, []);
-
   return (
     <>
       <div className='nav-wrapper'>
