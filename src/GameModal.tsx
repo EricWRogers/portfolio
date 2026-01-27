@@ -9,8 +9,6 @@ interface GameModalProps {
 }
 
 const GameModal: React.FC<GameModalProps> = ({ isOpen, onClose, gameTitle, gameIframeSrc }) => {
-  if (!isOpen) return null;
-
   const iframeRef = useRef<HTMLIFrameElement>(null);
   const modalContentRef = useRef<HTMLDivElement>(null);
   const titleRef = useRef<HTMLHeadingElement>(null);
@@ -46,7 +44,7 @@ const GameModal: React.FC<GameModalProps> = ({ isOpen, onClose, gameTitle, gameI
     if (iframe && iframe.contentDocument && iframe.contentDocument.readyState === 'complete') {
       handleLoad();
     }
-  }, []);
+  }, [gameIframeSrc]);
 
   useEffect(() => {
     const onResize = () => handleLoad();
@@ -65,7 +63,11 @@ const GameModal: React.FC<GameModalProps> = ({ isOpen, onClose, gameTitle, gameI
   }, [isOpen]);
 
   return (
-    <div className="modal-overlay" onClick={onClose}>
+    <div
+      className="modal-overlay"
+      onClick={onClose}
+      style={{ display: isOpen ? 'flex' : 'none' }}
+    >
       <div ref={modalContentRef} className="modal-content" onClick={(e) => e.stopPropagation()}>
         <button className="close-btn" onClick={onClose}>&times;</button>
         <h2 ref={titleRef} className='modal-title'>{gameTitle}</h2>
