@@ -30,16 +30,19 @@
 .modal-content {
     background: var(--modal-bg);
     color: var(--modal-text);
-    padding: px;
+    padding: 24px 24px 32px;
     border-radius: 8px;
     width: 80%;
     max-width: 1200px;
     position: relative;
     text-align: center;
+    max-height: 90vh;
+    overflow-y: auto;
 }
 
 .modal-title {
     color: var(--modal-text);
+    margin: 0 0 16px;
 }
   
 .close-btn {
@@ -60,4 +63,5 @@
     margin: 0px;
     border-radius: 8px;
     overflow-x: hidden;
+    display: block;
 }

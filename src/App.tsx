@@ -50,6 +50,13 @@ function App() {
       <div className='card-wrapper'>
         <div className='card-grid'>
           <Card
+            imageSrc="/Portfolio/project-rusty-security.png"
+            link="#"
+            gameTitle="Rusty Security Camera"
+            iframeSrc="/project-rusty-security.html"
+            platformMode='light'
+          />
+          <Card
             imageSrc="/Portfolio/project-stop-the-slimes.png"
             link="https://store.steampowered.com/app/2659530/Stop_The_Slimes/"
             gameTitle='Stop The Slimes'
@@ -65,6 +72,12 @@ function App() {
             platform="github"
             platformMode='light'
           />
+        </div>
+      </div>
+      <hr />
+      <h2>Projects</h2>
+      <div className='card-wrapper'>
+        <div className='card-grid'>
           <Card
             imageSrc="/Portfolio/project-super-pup-utilities.png"
             link="https://github.com/EricWRogers/SPSUnityUtilities"
@@ -73,12 +86,6 @@ function App() {
             platform="github"
             platformMode='light'
           />
-        </div>
-      </div>
-      <hr />
-      <h2>Projects</h2>
-      <div className='card-wrapper'>
-        <div className='card-grid'>
           <Card
             imageSrc="/Portfolio/project-drill-dash.png"
             link="https://store.steampowered.com/app/1064110/Drill_Dash/"
