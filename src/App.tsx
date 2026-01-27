@@ -1,4 +1,4 @@
-import profilePic from '/yourgeekeric.png'
+import profilePic from '/yourgeekeric.webp'
 import { IoLogoYoutube } from "react-icons/io";
 import { FaSquareXTwitter } from "react-icons/fa6";
 import { FaGithub } from "react-icons/fa";
@@ -28,20 +28,6 @@ function App() {
       '/crown-of-screws.html',
     ];
 
-    const imagePrefetch = [
-      '/Portfolio/project-rusty-security.png',
-      '/Portfolio/project-stop-the-slimes.png',
-      '/Portfolio/project-canis-engine.png',
-      '/Portfolio/project-super-pup-utilities.png',
-      '/Portfolio/project-drill-dash.png',
-      'Portfolio/project-gob.png',
-      'Portfolio/project-otrio.png',
-      'Portfolio/project-garden-of-doom.png',
-      'Portfolio/project-flood-runner.png',
-      '/Portfolio/project-frankenstein-hitman.png',
-      '/Portfolio/project-crown-of-screws.jpg',
-    ];
-
     const runPrefetch = () => {
       htmlPrefetch.forEach((href) => {
         const link = document.createElement('link');
@@ -49,11 +35,6 @@ function App() {
         link.as = 'document';
         link.href = href;
         document.head.appendChild(link);
-      });
-
-      imagePrefetch.forEach((src) => {
-        const img = new Image();
-        img.src = src;
       });
     };
 
@@ -101,14 +82,14 @@ function App() {
       <div className='card-wrapper'>
         <div className='card-grid'>
           <Card
-            imageSrc="/Portfolio/project-rusty-security.png"
+            imageSrc="/Portfolio/project-rusty-security.webp"
             link="#"
             gameTitle="Rusty Security Camera"
             iframeSrc="/project-rusty-security.html"
             platformMode='light'
           />
           <Card
-            imageSrc="/Portfolio/project-stop-the-slimes.png"
+            imageSrc="/Portfolio/project-stop-the-slimes.webp"
             link="https://store.steampowered.com/app/2659530/Stop_The_Slimes/"
             gameTitle='Stop The Slimes'
             iframeSrc="/stop-the-slimes.html"
@@ -116,7 +97,7 @@ function App() {
             platformMode='dark'
           />
           <Card
-            imageSrc="/Portfolio/project-canis-engine.png"
+            imageSrc="/Portfolio/project-canis-engine.webp"
             link="https://github.com/EricWRogers/canis"
             gameTitle='Canis Game Engine'
             iframeSrc="/canis-game-engine.html"
@@ -130,7 +111,7 @@ function App() {
       <div className='card-wrapper'>
         <div className='card-grid'>
           <Card
-            imageSrc="/Portfolio/project-super-pup-utilities.png"
+            imageSrc="/Portfolio/project-super-pup-utilities.webp"
             link="https://github.com/EricWRogers/SPSUnityUtilities"
             gameTitle='SuperPupStudio Unity Utilities'
             iframeSrc="/super-pup-studio-unity-utilities.html"
@@ -138,7 +119,7 @@ function App() {
             platformMode='light'
           />
           <Card
-            imageSrc="/Portfolio/project-drill-dash.png"
+            imageSrc="/Portfolio/project-drill-dash.webp"
             link="https://store.steampowered.com/app/1064110/Drill_Dash/"
             gameTitle="Drill Dash"
             iframeSrc="/drill-dash.html"
@@ -146,7 +127,7 @@ function App() {
             platformMode='dark'
           />
           <Card
-            imageSrc="Portfolio/project-gob.png"
+            imageSrc="Portfolio/project-gob.webp"
             link="#"
             gameTitle="Gob Smax Galaxy"
             iframeSrc="/gob-smax-galaxy.html"
@@ -154,7 +135,7 @@ function App() {
             platformMode='light'
           />
           <Card
-            imageSrc="Portfolio/project-otrio.png"
+            imageSrc="Portfolio/project-otrio.webp"
             link="#"
             gameTitle="Otrio"
             iframeSrc="/otrio.html"
@@ -162,21 +143,21 @@ function App() {
             platformMode='dark'
           />
           <Card
-            imageSrc="Portfolio/project-garden-of-doom.png"
+            imageSrc="Portfolio/project-garden-of-doom.webp"
             link="https://v3.globalgamejam.org/2023/games/garden-doom-8"
             gameTitle="Garden of Doom"
             iframeSrc="/garden-of-doom.html"
             platformMode='light'
           />
           <Card
-            imageSrc="Portfolio/project-flood-runner.png"
+            imageSrc="Portfolio/project-flood-runner.webp"
             link="#"
             gameTitle="Flood Runner"
             iframeSrc="/flood-runner.html"
             platformMode='light'
           />
           <Card
-            imageSrc="/Portfolio/project-frankenstein-hitman.png"
+            imageSrc="/Portfolio/project-frankenstein-hitman.webp"
             link="https://yourgeekeric.itch.io/frankensteins-hitman"
             gameTitle="Frankenstein's Hitman"
             iframeSrc="/frankenstein-hitman.html"
@@ -184,7 +165,7 @@ function App() {
             platformMode='light'
           />
           <Card
-            imageSrc="/Portfolio/project-crown-of-screws.jpg"
+            imageSrc="/Portfolio/project-crown-of-screws.webp"
             link="https://yourgeekeric.itch.io/crown-of-screws"
             gameTitle="Crown of Screws"
             iframeSrc="/crown-of-screws.html"
@@ -201,7 +182,7 @@ function App() {
 }
 
 /* <Card
-            imageSrc="/Portfolio/project-bath-battle.jpg"
+            imageSrc="/Portfolio/project-bath-battle.webp"
             link="https://globalgamejam.org/games/2025/bath-battle-3"
             gameTitle="Bath Battle"
             iframeSrc=""
@@ -209,7 +190,7 @@ function App() {
             platformMode='light'
           />
           <Card
-            imageSrc="Portfolio/project-flood-runner.png"
+            imageSrc="Portfolio/project-flood-runner.webp"
             link="#"
             gameTitle="Flood Runner"
             iframeSrc="/flood-runner.html"
@@ -217,7 +198,7 @@ function App() {
             platformMode='light'
           />
           <Card
-            imageSrc="Portfolio/project-lw.png"
+            imageSrc="Portfolio/project-lw.webp"
             link="#"
             gameTitle="Lightning Wizard"
             iframeSrc="/lightning-wizard.html"
